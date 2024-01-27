@@ -1,1 +1,1 @@
-{"config":{"lang":["en"],"separator":"[\\s\\-]+","pipeline":["stopWordFilter"]},"docs":[{"location":"","title":"Home","text":"<p>Welcome to this project!</p> <p>This is a modernized cpp project with CI/CD integrated. </p>"}]}
+{"config":{"lang":["en"],"separator":"[\\s\\-]+","pipeline":["stopWordFilter"]},"docs":[{"location":"","title":"Home","text":""},{"location":"#welcome-to-this-project","title":"Welcome to this project!","text":"<p>This is a modernized cpp project with CI/CD integrated. </p>"}]}
