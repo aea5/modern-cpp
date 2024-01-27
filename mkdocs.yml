@@ -1,0 +1,177 @@
+# Project information
+site_name: "Rivershade's Modern C++"
+site_description: "A modern C++ repo."
+site_url: https://aea5.github.io/modern-cpp/
+site_author: "Rivershade"
+
+# Repository
+repo_name: aea5/modern-cpp
+repo_url: https://github.com/aea5/modern-cpp
+
+# Copyright
+copyright: Copyright &copy; Rivershade 2024
+
+# Configuration
+theme:
+  name: material
+  # logo: assets/images/mp-units-transparent-white.svg
+  # favicon: assets/images/mp-units-color.svg
+  custom_dir: docs/.overrides
+  features:
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    # - navigation.expand
+    - navigation.indexes
+    # - navigation.sections
+    - navigation.tabs
+    - navigation.footer
+    - navigation.top
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    - toc.integrate
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to system preference
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+# Plugins
+# plugins:
+#   - blog
+#   - rss:
+#       match_path: blog/posts/.*
+#       date_from_meta:
+#         as_creation: date
+#       categories:
+#         - categories
+#         - tags
+#   - search
+#   - social:
+#       enabled: !ENV [CI, false]
+#       cards_layout_options:
+#         background_color: "#00599c"
+#   # - tags:
+  #     tags_file: users_guide/examples/tags_index.md
+
+# Customization
+extra:
+  version:
+    provider: mike
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - toc:
+      permalink: true
+
+# Page tree
+nav:
+  - Home: index.md
+  # - Getting Started:
+  #     - Introduction: getting_started/introduction.md
+  #     - Quick Start: getting_started/quick_start.md
+  #     - Look and Feel: getting_started/look_and_feel.md
+  #     - Installation and Usage: getting_started/installation_and_usage.md
+  #     - FAQ: getting_started/faq.md
+  # - User's Guide:
+  #     - Terms and Definitions: users_guide/terms_and_definitions.md
+  #     - Framework Basics:
+  #         - Interface Introduction: users_guide/framework_basics/interface_introduction.md
+  #         - Design Overview: users_guide/framework_basics/design_overview.md
+  #         - Systems of Quantities: users_guide/framework_basics/systems_of_quantities.md
+  #         - Systems of Units: users_guide/framework_basics/systems_of_units.md
+  #         - Simple and Typed Quantities: users_guide/framework_basics/simple_and_typed_quantities.md
+  #         - Value Conversions: users_guide/framework_basics/value_conversions.md
+  #         - Character of a Quantity: users_guide/framework_basics/character_of_a_quantity.md
+  #         - Dimensionless Quantities: users_guide/framework_basics/dimensionless_quantities.md
+  #         - Quantity Arithmetics: users_guide/framework_basics/quantity_arithmetics.md
+  #         - Generic Interfaces: users_guide/framework_basics/generic_interfaces.md
+  #         - Faster-than-lightspeed Constants: users_guide/framework_basics/faster_than_lightspeed_constants.md
+  #         - The Affine Space: users_guide/framework_basics/the_affine_space.md
+  #         - Obtaining Metadata: users_guide/framework_basics/obtaining_metadata.md
+  #         - Concepts: users_guide/framework_basics/concepts.md
+  #         - Text Output: users_guide/framework_basics/text_output.md
+  #     - Defining Systems:
+  #         - Introduction: users_guide/defining_systems/introduction.md
+  #         - International System of Quantities (ISQ): users_guide/defining_systems/isq.md
+  #         - International System of Units (SI): users_guide/defining_systems/si.md
+  #         - Strong Angular System: users_guide/defining_systems/strong_angular_system.md
+  #         - Natural Units: users_guide/defining_systems/natural_units.md
+  #     - Use Cases:
+  #         - Pure Dimensional Analysis: users_guide/use_cases/pure_dimensional_analysis.md
+  #         - Working with Legacy Interfaces: users_guide/use_cases/working_with_legacy_interfaces.md
+  #         - Using Custom Representation Types: users_guide/use_cases/using_custom_representation_types.md
+  #         - Interoperability with Other Libraries: users_guide/use_cases/interoperability_with_other_libraries.md
+  #         - Extending the Library: users_guide/use_cases/extending_the_library.md
+  #         - Wide Compatibility: users_guide/use_cases/wide_compatibility.md
+  #     - Examples:
+  #         - Tags Index: users_guide/examples/tags_index.md
+  #         - All Examples:
+  #             - hello_units: users_guide/examples/hello_units.md
+  #             - avg_speed: users_guide/examples/avg_speed.md
+  #             - si_constants: users_guide/examples/si_constants.md
+  #     - Appendix:
+  #         - Glossary: appendix/glossary.md
+  #         - References: appendix/references.md
+  # - Blog:
+  #     - blog/index.md
+  # - Release Notes: release_notes.md
