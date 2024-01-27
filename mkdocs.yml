@@ -16,7 +16,7 @@ theme:
   name: material
   # logo: assets/images/mp-units-transparent-white.svg
   # favicon: assets/images/mp-units-color.svg
-  custom_dir: docs/.overrides
+  # custom_dir: docs/.overrides
   features:
     - content.action.edit
     - content.action.view
