@@ -1,5 +1,5 @@
 # this checkout into gh-pages branch and publish docs; GitHub Pages 
-name: Publish Docs in gh-pages
+name: Publish Docs in Branch gh-pages 
 
 on:
   push:

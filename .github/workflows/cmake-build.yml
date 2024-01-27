@@ -14,4 +14,4 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: configure
-      run: cmake --version
+      run: cmake --workflow --preset default
