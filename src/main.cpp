@@ -3,6 +3,6 @@
 
 int main()
 {
-    I should fail std::cout << "Hello, World!" << std::endl;
+    std::cout << "Hello, World!" << std::endl;
     return 0;
 }
