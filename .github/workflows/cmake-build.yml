@@ -15,6 +15,6 @@ jobs:
     - uses: actions/checkout@v4
     - name: Setup Ninja
       uses: ashutoshvarma/setup-ninja@v1.1
-      
+
     - name: configure
       run: cmake --workflow --preset default
